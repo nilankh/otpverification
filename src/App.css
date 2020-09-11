@@ -22,12 +22,41 @@
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
 }
+.para{
+  text-align:center;
+  color:gray ;
+  margin-top:20px;
+  font-family: sans-serif;
+}
 
+
+.para1{
+  text-align:center;
+  color:gray ;
+  margin-top:4px;
+  font-family: sans-serif;
+  margin-bottom:10px;
+}
 .heading{
   text-align: center;
   color: skyblue;
   margin-top: 1rem;
   font-family: cursive;
+  margin-top:-150px;
+  margin-bottom:70px;
+}
+.welcome{
+  text-align:center;
+
+}
+.para3{
+  
+  margin-left:150px;
+  background-color: orange;
+  border: none;
+  color: #fff;
+  border-radius: 15px;
+  padding: 10px;
 }
 .tel-box{
   display: flex;

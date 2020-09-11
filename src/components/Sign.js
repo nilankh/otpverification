@@ -30,7 +30,8 @@ class Sign extends Component {
           <h1 className="heading">
             Admit<span className="kard">Kard</span>
           </h1>
-          <p>Welcome Back</p>
+          <h1 className="welcome">Welcome Back</h1>
+          <p className="para">Please sign in to your account</p>
           <div className="tel-box">
             <div className="select-box" onChange={this.countryFlagHandler}>
               <img
@@ -786,6 +787,8 @@ class Sign extends Component {
               defaultValue={this.state.phone}
             />
           </div>
+            <p className="para">We will send you a one-time SMS message</p>
+            <p className="para1">Charges may apply</p>
           <div className="output">
             <h2>Phone no.:</h2>{" "}
             <span className="result">
@@ -793,6 +796,8 @@ class Sign extends Component {
               {this.state.phone}
             </span>
           </div>
+
+          <button className="para3">&emsp; &emsp; Sign In with OTP &emsp; &emsp;</button>
         </div>
       </div>
     );
