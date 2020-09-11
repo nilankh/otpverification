@@ -12,6 +12,10 @@
   align-items: center;
   justify-content: center;
 }
+
+.kard{
+  color:grey;
+}
 .container{
   height: 200px;
   width:400px;
@@ -21,8 +25,9 @@
 
 .heading{
   text-align: center;
+  color: skyblue;
   margin-top: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: cursive;
 }
 .tel-box{
   display: flex;
