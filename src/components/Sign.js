@@ -783,6 +783,7 @@ class Sign extends Component {
             <input
               type="tel"
               placeholder="9999999999"
+              maxLength="10"
               className="tel"
               onChange={this.phoneHandler}
               defaultValue={this.state.phone}

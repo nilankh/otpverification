@@ -142,8 +142,21 @@ p {
   line-height: 1.7em;
   color: #999;
 }
-
+.head{
+  margin-bottom:20px;
+  margin-top:5px;
+}
 .ver {
   background-color: orange;
-  
+  margin-right:15px;
+  padding:10px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.image {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius:50%;
+
 }

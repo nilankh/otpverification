@@ -19,9 +19,10 @@ const OtpScreen = () => {
         
 
             <div className="row">
+                <img src="https://t4.ftcdn.net/jpg/01/86/12/63/240_F_186126352_WQiMSAWksKh87XuXc5ePXXFhOQi96paS.jpg" className="image" />
                 <div className="col text-center">
-                    <h2>Please verify Mobile number</h2>
-                    <p>Enter the OTP sent to you to verify your identity</p>
+                    <h2 className="head">Please verify Mobile number</h2>
+                    <p className="head">Enter the OTP sent to you to verify your identity</p>
 
                     {otp.map((data, index) => {
                         return (
