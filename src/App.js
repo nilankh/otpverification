@@ -1,7 +1,8 @@
-import React from 'react'
-import OtpScreen from './components/OtpScreen'
-import Sign from './components/Sign'
-import Success from './components/Success'
+import React from "react";
+import OtpScreen from "./components/OtpScreen";
+import Sign from "./components/Sign";
+import Success from "./components/Success";
+import firebase from "./firebase";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       {/* <OtpScreen /> */}
       <Success />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
