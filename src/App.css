@@ -160,3 +160,15 @@ p {
   border-radius:50%;
 
 }
+
+.logo-container{
+  text-align: center;
+  position: absolute;
+left: 7.73%;
+right: 10.93%;
+top: 11.7%;
+bottom: 50.37%;
+
+  
+}
+
