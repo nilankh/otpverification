@@ -26,6 +26,9 @@ const OtpScreen = () => {
         alert("Please enter a valid otp");
     }
   };
+  const handler = () => {
+      history.push("/")
+  }
   return (
     <div className="row">
       <img
@@ -37,7 +40,7 @@ const OtpScreen = () => {
         <p className="head">
           Enter the OTP sent to you to verify your identity
         </p>
-
+        
         {otp.map((data, index) => {
           return (
             <input
@@ -71,6 +74,8 @@ const OtpScreen = () => {
             Verify OTP
           </button>
         </p>
+        <p>Didn't Received the code ?<button onClick={handler} className="g">Resend OTP</button> </p>
+        
       </div>
     </div>
   );
