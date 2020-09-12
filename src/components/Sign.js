@@ -800,6 +800,7 @@ class Sign extends Component {
               <input
                 type="tel"
                 placeholder="9999999999"
+                minLength="10"
                 maxLength="10"
                 className="tel"
                 onChange={this.phoneHandler}
