@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
 
+
 class Sign extends Component {
   state = {
     flagImg:
@@ -787,8 +788,8 @@ class Sign extends Component {
               defaultValue={this.state.phone}
             />
           </div>
-            <p className="para">We will send you a one-time SMS message</p>
-            <p className="para1">Charges may apply</p>
+          <p className="para">We will send you a one-time SMS message</p>
+          <p className="para1">Charges may apply</p>
           <div className="output">
             <h2>Phone no.:</h2>{" "}
             <span className="result">
@@ -797,7 +798,9 @@ class Sign extends Component {
             </span>
           </div>
 
-          <button className="para3">&emsp; &emsp; Sign In with OTP &emsp; &emsp;</button>
+          <button className="para3">
+            &emsp; &emsp; Sign In with OTP &emsp; &emsp;
+          </button>
         </div>
       </div>
     );
