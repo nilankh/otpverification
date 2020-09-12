@@ -1,6 +1,6 @@
 import React, { Component } from "react";
+import firebase from '../firebase'
 import "../App.css";
-
 
 class Sign extends Component {
   state = {
@@ -24,6 +24,9 @@ class Sign extends Component {
   phoneHandler = (e) => {
     this.setState({ phone: e.target.value });
   };
+
+  
+
   render() {
     return (
       <div className="page">
@@ -799,7 +802,7 @@ class Sign extends Component {
             </span>
           </div>
 
-          <button className="para3">
+          <button className="para3" >
             &emsp; &emsp; Sign In with OTP &emsp; &emsp;
           </button>
         </div>

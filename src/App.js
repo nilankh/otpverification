@@ -1,19 +1,23 @@
 import React from "react";
-import Auth from "./components/Auth";
-// import OtpScreen from "./components/OtpScreen";
-// import Sign from "./components/Sign";
-// import Success from "./components/Success";
-
+// import Auth from "./components/Auth";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import OtpScreen from "./components/OtpScreen";
+import Sign from "./components/Sign";
+import Success from "./components/Success";
 
 function App() {
-  
   return (
-    <div>
-      {/* <Sign /> */}
-      {/* <OtpScreen /> */}
-      {/* <Success /> */}
-      <Auth />
-    </div>
+    <Router>
+      <div>
+        <Switch>
+        
+        <Route exact path="/" component={Sign} />
+        <Route exact path="/verify" component={OtpScreen} />
+        <Route exact path="/success" component={Success} />
+        
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
