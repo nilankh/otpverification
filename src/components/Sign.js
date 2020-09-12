@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import firebase from '../firebase'
+// import firebase from "../firebase";
+
 import "../App.css";
+import OtpScreen from "./OtpScreen";
 
 class Sign extends Component {
   state = {
@@ -25,11 +27,23 @@ class Sign extends Component {
     this.setState({ phone: e.target.value });
   };
 
-  
+  handleClick=(e)=>{
+    
+    e.preventDefault();
+    // console.log("e",e)
+    // console.log("Phone", this.state.phone)
+    if(this.state.phone ===''){
+      alert("please enter a valid number");
+    }else{
+      
+    }
+    }
 
   render() {
     return (
+      
       <div className="page">
+        
         <div className="container">
           <h1 className="heading">
             Admit<span className="kard">Kard</span>
@@ -783,28 +797,33 @@ class Sign extends Component {
                 </option>
               </select>
             </div>
-            <input
-              type="tel"
-              placeholder="9999999999"
-              maxLength="10"
-              className="tel"
-              onChange={this.phoneHandler}
-              defaultValue={this.state.phone}
-            />
+            <form onSubmit={this.handleClick}>
+              <input
+                type="tel"
+                placeholder="9999999999"
+                maxLength="10"
+                className="tel"
+                onChange={this.phoneHandler}
+                defaultValue={this.state.phone}
+              />
+              <input
+                type="submit"
+                value="&emsp; &emsp; Sign In with OTP &emsp; &emsp;"
+                className="para3"
+              />
+               
+              <p className="para">We will send you a one-time SMS message</p>
+              <p className="para1">Charges may apply</p>
+              <div className="output">
+                <h2>Phone no.:</h2>{" "}
+                <span className="result">
+                  +{this.state.countryCodeValue}
+                  {this.state.phone}
+                </span>
+              </div>
+              
+            </form>
           </div>
-          <p className="para">We will send you a one-time SMS message</p>
-          <p className="para1">Charges may apply</p>
-          <div className="output">
-            <h2>Phone no.:</h2>{" "}
-            <span className="result">
-              +{this.state.countryCodeValue}
-              {this.state.phone}
-            </span>
-          </div>
-
-          <button className="para3" >
-            &emsp; &emsp; Sign In with OTP &emsp; &emsp;
-          </button>
         </div>
       </div>
     );
