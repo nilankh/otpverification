@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 // import firebase from "../firebase";
-
+import {Redirect} from 'react-router-dom';
 import "../App.css";
+import { Link } from 'react-router-dom';
 import OtpScreen from "./OtpScreen";
 
 class Sign extends Component {
@@ -27,23 +28,21 @@ class Sign extends Component {
     this.setState({ phone: e.target.value });
   };
 
-  handleClick=(e)=>{
-    
+  handleClick = (e) => {
     e.preventDefault();
     // console.log("e",e)
     // console.log("Phone", this.state.phone)
-    if(this.state.phone ===''){
-      alert("please enter a valid number");
-    }else{
+    if (this.state.phone === "") {
+      alert("please enter a valid Mobile number");
+    } else {
+      this.props.history.push('/verify');
       
     }
-    }
+  };
 
   render() {
     return (
-      
       <div className="page">
-        
         <div className="container">
           <h1 className="heading">
             Admit<span className="kard">Kard</span>
@@ -811,7 +810,7 @@ class Sign extends Component {
                 value="&emsp; &emsp; Sign In with OTP &emsp; &emsp;"
                 className="para3"
               />
-               
+
               <p className="para">We will send you a one-time SMS message</p>
               <p className="para1">Charges may apply</p>
               <div className="output">
@@ -821,7 +820,6 @@ class Sign extends Component {
                   {this.state.phone}
                 </span>
               </div>
-              
             </form>
           </div>
         </div>
